@@ -23,6 +23,24 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="absolute -z-1  w-full min-h-screen flex items-center justify-center">
+          {/* Background with gradient */}
+          {/* <div
+            className="absolute inset-0 bg-gradient-to-br from-[#030712] via-[#060d1f] to-[#030712]"
+            aria-hidden="true"
+          /> */}
+
+          {/* Grid pattern overlay */}
+          {/* <div
+            className="absolute inset-0 opacity-[0.05] bg-blend-hard-light"
+            style={{
+              backgroundImage: `linear-gradient(to right, white 0.5px, transparent 0.2px), 
+                          linear-gradient(to bottom, white 0.5px, transparent 0.2px)`,
+              backgroundSize: "40px 40px",
+            }}
+            aria-hidden="true"
+          /> */ }
+        </div>
         <Header />
         {children}
       </body>
