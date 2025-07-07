@@ -1,12 +1,19 @@
 "use client";
 
 import { Button } from "./ui/button";
+import { Card } from "./ui/card";
 
 const EXPERIENCE = [
   {
-    'company': 'GuruAI',
+    'company': 'AIGuru',
     'dates': 'Summer 2025',
     'role': 'Generative AI Engineer',
+    'description': 'Built a custom OCR and text-segmentation pipeline to process '
+  },
+  {
+    'company': 'Extreme Dynamics Lab',
+    'dates': 'Summer 2025',
+    'role': 'AI/ML + Algorithmic Computing Researcher',
     'description': 'Built a custom OCR and text-segmentation pipeline to process '
   },
   {
@@ -14,26 +21,32 @@ const EXPERIENCE = [
     'role': 'Software and Controls Integration',
     'dates': 'Summer 2024',
     'description': 'Provided software automation for client projects, including for Justin Timberlake and the World Financial Group'
+  },
+  {
+    'company': '',
+    'role': 'Private Tutor',
+    'dates': 'Summer 2023 - Present',
+    'description': 'Provided software automation for client projects, including for Justin Timberlake and the World Financial Group'
   }
 ];
 
 export const ExperienceSection = ({props}) => {
   return (
-    <div className="border-[.5px] border-gray-800 rounded-xl bg-background shadow-2xl max-w-xl mx-6">
-      <div className="w-full rounded-t-xl text-white text-3xl px-6 py-2 bg-card mb-6"> Work Experience </div>
+    <Card classes="max-w-xl mx-6" title="Work Experience"
+    content={(
       <ol className="relative border-s border-gray-700 mx-6">
         {
           EXPERIENCE.map((item, index) => {
-            return (<li className={`${(index == 1) ? "" : "mb-10"} ms-4`} key={index}>
+            return (<li className={`${(index == EXPERIENCE.length - 1) ? "" : "mb-6"} ms-4`} key={index}>
               <div className="absolute w-3 h-3 bg-gray-900 rounded-full mt-1.5 -start-1.5 border border-white"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-500">{item.dates}</time>
-              <h3 className="text-lg font-semibold text-white">{item.role} - <i>{item.company}</i></h3>
+              <h3 className="text-lg font-semibold text-white">{item.role}{(item.company=="")?"":" - "}<i>{item.company}</i> </h3>
               <p className="mb-4 text-base font-normal text-gray-400">{item.description}</p>
             </li>)
           })
         }
       </ol>
-      <Button variant='outline' className='mx-6 mb-4'>See all experience -&gt; </Button>
-    </div>
+    )}
+    />
   )
 }

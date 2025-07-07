@@ -13,7 +13,7 @@ const CONTENT = {
 
 export const Introduction = () => {
     return (
-    <div className="mx-[5%] h-fit flex flex-col gap-4 max-w-xl items-center">
+    <div className="mx-[5%] h-full flex flex-col gap-4 max-w-xl items-center">
         <div>
             <div className="text-center font-medium text-primary text-[42px] leading-[1.35]">Hi! I&apos;m <span className="text-secondary">Vraj Parikh</span></div>
             <div className="text-center font-light italic text-primary text-[16px]">{CONTENT.role}</div>
