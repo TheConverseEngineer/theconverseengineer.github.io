@@ -1,6 +1,6 @@
 export const projectTagTones = {
   "Machine Learning": "coral",
-  "Limited compute": "gold",
+  "High-Performance Systems": "gold",
   "From scratch": "cyan",
   Autonomy: "blue",
   Guidance: "violet",
@@ -13,6 +13,7 @@ export const projectTagTones = {
   Rust: "umber",
   "Embedded Systems": "indigo",
   Robotics: "mint",
+
 } as const;
 
 export type ProjectTag = keyof typeof projectTagTones;
@@ -22,7 +23,7 @@ export const projectLanguages = ["C++", "Python", "Rust"] as const satisfies
 
 export const projectCategories = [
   "Machine Learning",
-  "Embedded Systems",
+  "High-Performance Systems",
   "Robotics",
 ] as const satisfies readonly ProjectTag[];
 
@@ -52,33 +53,78 @@ export type ProjectCardData = Pick<
 
 export const projects = [
   {
-    slug: "language-model-training",
-    title: "Language model training",
-    summary: "Training a language model from scratch with limited compute.",
+    slug: "picochat",
+    title: "PicoChat",
+    summary: "Training an optimized 1B language model from scratch to complete in small language model benchmarks.",
     details: placeholderDetails,
-    githubUrl: "https://github.com",
-    tags: ["Python", "Machine Learning", "Limited compute", "From scratch"],
+    githubUrl: "https://github.com/TheConverseEngineer/picochat",
+    tags: ["Python", "Machine Learning", "C++"],
   },
   {
-    slug: "self-guided-rocket",
-    title: "Self-guided rocket",
-    summary: "An active self-guided rocket.",
+    slug: "alphapaint",
+    title: "AlphaPaint",
+    summary: "A custom reinforcement learning-based game AI built to compete in the 2026 Bytefight competition at Georgia Tech.",
     details: placeholderDetails,
-    githubUrl: "https://github.com",
-    tags: ["C++", "Robotics", "Autonomy", "Guidance", "Rocketry"],
-  },
-  {
-    slug: "splatoon-ai-agent",
-    title: "Splatoon AI agent",
-    summary: "An award-winning AI agent for Splatoon.",
-    details: placeholderDetails,
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/TheConverseEngineer/alphapaint",
     tags: [
       "Rust",
       "Machine Learning",
-      "Artificial intelligence",
       "Game AI",
-      "Award-winning",
+      "High-Performance Systems"
     ],
   },
+  {
+    slug: "gnc-tvc",
+    title: "Thrust Vector Controls",
+    summary: "Actively stabilizing a G-class using a gimbaled motor and thrust vector control",
+    details: placeholderDetails,
+    githubUrl: "https://github.com/Georgia-Tech-GNC/flight-software",
+    tags: ["C++", "Robotics", "Embedded Systems", "High-Performance Systems"],
+  },
+  {
+    slug: "rl-simplified",
+    title: "RL Simplified",
+    summary: "A collection of custom pedagogical implementations for many traditional and landmark reinforcement learning algorithms.",
+    details: placeholderDetails,
+    githubUrl: "https://github.com/Georgia-Tech-GNC/flight-software",
+    tags: ["Python", "Machine Learning"],
+  },
+  {
+    slug: "alphasnake",
+    title: "AlphaSnake",
+    summary: "A working implementation of the AlphaZero and UBFM algorithms, build for the 2025 Bytefight competition at Georgia Tech.",
+    details: placeholderDetails,
+    githubUrl: "https://github.com/TheConverseEngineer/alphasnake",
+    tags: [
+      "Rust",
+      "Machine Learning",
+      "Game AI",
+      "High-Performance Systems"
+    ],
+  },
+  {
+    slug: "twinbotics",
+    title: "TwinBotics",
+    summary: "Manipulating blocks using dual coordinated robotics arms, built for the 2026 RoboTech hackathon at Georgia Tech",
+    details: placeholderDetails,
+    githubUrl: "https://github.com/TheConverseEngineer/alphasnake",
+    tags: [
+      "Python",
+      "C++",
+      "Embedded Systems",
+      "Robotics"
+    ],
+  },
+  {
+    slug: "deltapy",
+    title: "DeltaPy",
+    summary: "A from-scratch minimal backpropagation and machine learning library",
+    details: placeholderDetails,
+    githubUrl: "https://github.com/TheConverseEngineer/deltapy",
+    tags: [
+      "Python",
+      "Machine Learning",
+    ],
+  },
+  
 ] as const satisfies readonly Project[];

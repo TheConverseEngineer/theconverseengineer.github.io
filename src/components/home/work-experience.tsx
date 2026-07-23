@@ -4,38 +4,38 @@ const experience = [
   {
     company: "Comma",
     href: "https://comma.ai/",
-    dates: "Dates forthcoming",
+    dates: "Summer 2026",
     role: "Autonomy Intern",
     context: "Self-driving vehicles",
     description:
-      "Details about my contributions and the technical challenges involved are forthcoming.",
+      "Developed novel sleep detection monitoring software deployed to over 20,000 users and built infrastructure for training up to 4B-parameter world models based on user driving footage.",
   },
   {
-    company: "Other A",
-    href: "#",
-    dates: "Dates forthcoming",
-    role: "Autonomy Intern",
+    company: "Extreme Dynamics Lab",
+    href: "https://sarhadi.eas.gatech.edu/",
+    dates: "Summer 2025 - Fall 2026",
+    role: "Research Assistant",
+    context: "Coastal flooding dynamics",
+    description:
+      "Researched new mesh refinement approaches for shallow water dynamics using fine-mesh graph neural operators.",
+  },
+  {
+    company: "AI Guru",
+    href: "https://aiguru.one/",
+    dates: "Summer 2025",
+    role: "Software Engineering Intern ",
     context: "Self-driving vehicles",
     description:
-      "Details about my contributions and the technical challenges involved are forthcoming.",
+      "Build document retrieval and chatbot backend for client site <a href=\"https://millmind.ai\">millmind.ai</a>.",
   },
   {
-    company: "Other B",
-    href: "#",
-    dates: "Dates forthcoming",
-    role: "Autonomy Intern",
-    context: "Self-driving vehicles",
-    description:
-      "Details about my contributions and the technical challenges involved are forthcoming.",
-  },
-  {
-    company: "TAIT",
+    company: "TAIT Global",
     href: "https://www.taittowers.com/home",
-    dates: "Dates forthcoming",
-    role: "Software Intern",
+    dates: "Summer 2024",
+    role: "Automation Software Intern",
     context: "Live entertainment automation",
     description:
-      "Details about my contributions and the technical challenges involved are forthcoming.",
+      "Wrote and configured live automation software in use during multiple productions, including at the Justin Timberlake world tour and Madison Square Gardens.",
   },
 ] as const;
 

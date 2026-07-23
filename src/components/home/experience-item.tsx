@@ -61,8 +61,10 @@ export function ExperienceItem({
           <span> · </span>
           {context}
         </p>
-        <p className="mt-2 mb-0 text-sm leading-relaxed text-muted">
-          {description}
+        <p 
+          className="mt-2 mb-0 text-sm leading-relaxed text-muted" 
+          dangerouslySetInnerHTML={{__html: description}}
+        >
         </p>
       </article>
     </li>
