@@ -1,4 +1,5 @@
 import { Introduction } from "@/components/home/introduction";
+import { SelectedProjects } from "@/components/home/selected-projects";
 import { WorkExperience } from "@/components/home/work-experience";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <Introduction />
         <WorkExperience />
       </div>
+      <SelectedProjects />
     </main>
   );
 }
