@@ -11,7 +11,7 @@ export function ProjectBackLinkContent({
 }: ProjectBackLinkContentProps) {
   return (
     <Link
-      className="group inline-flex min-h-11 w-52 shrink-0 items-center justify-start gap-2 whitespace-nowrap font-mono text-sm text-muted no-underline transition-[color,transform] duration-150 hover:-translate-y-px hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none min-[40rem]:justify-end"
+      className="group inline-flex min-h-11 w-56 shrink-0 items-center justify-start gap-2 whitespace-nowrap font-mono text-base text-muted no-underline transition-[color,transform] duration-150 hover:-translate-y-px hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none min-[40rem]:justify-end"
       href={href}
     >
       <svg

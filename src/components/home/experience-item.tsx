@@ -1,10 +1,12 @@
+import type { ReactNode } from "react";
+
 type ExperienceItemProps = {
   company: string;
   href: string;
   dates: string;
   role: string;
   context: string;
-  description: string;
+  description: ReactNode;
   isLast: boolean;
 };
 
@@ -52,7 +54,7 @@ export function ExperienceItem({
               </span>
             </a>
           </h3>
-          <time className="shrink-0 font-mono text-xs text-muted">
+          <time className="shrink-0 font-mono text-sm text-muted">
             {dates}
           </time>
         </div>
@@ -61,10 +63,8 @@ export function ExperienceItem({
           <span> · </span>
           {context}
         </p>
-        <p 
-          className="mt-2 mb-0 text-sm leading-relaxed text-muted" 
-          dangerouslySetInnerHTML={{__html: description}}
-        >
+        <p className="mt-2 mb-0 text-base leading-relaxed text-muted">
+          {description}
         </p>
       </article>
     </li>

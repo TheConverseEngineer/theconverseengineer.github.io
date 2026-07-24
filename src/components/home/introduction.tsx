@@ -3,7 +3,7 @@ import Link from "next/link";
 const bioLinkStyles =
   "text-accent underline decoration-current underline-offset-4 transition-colors duration-150 hover:text-foreground motion-reduce:transition-none";
 const profileLinkStyles =
-  "group inline-flex min-h-11 items-center gap-2 font-mono text-sm text-muted no-underline transition-[color,transform] duration-150 hover:-translate-y-px hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none";
+  "group inline-flex min-h-11 items-center gap-2 font-mono text-base text-muted no-underline transition-[color,transform] duration-150 hover:-translate-y-px hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none";
 
 export function Introduction() {
   return (
@@ -12,7 +12,7 @@ export function Introduction() {
       aria-labelledby="introduction-heading"
     >
       <div>
-        <p className="mb-4 font-mono text-sm text-accent">
+        <p className="mb-4 font-mono text-base text-accent">
           Hey there! I&apos;m
         </p>
         <h1
@@ -34,16 +34,16 @@ export function Introduction() {
         .
       </p>
 
-      <dl className="m-0 grid gap-2 font-mono text-sm">
+      <dl className="m-0 grid gap-2 font-mono text-base">
         <div className="grid grid-cols-[5.5rem_1fr] gap-3">
           <dt className="text-muted">Education</dt>
           <dd className="m-0 text-foreground">
             <span className="block">Georgia Institute of Technology</span>
-            <span className="mt-1 block text-xs leading-relaxed text-muted">
+            <span className="mt-1 block text-sm leading-relaxed text-muted">
               B.S. Computer Science
               <span className="text-accent"> · graduating</span>
             </span>
-            <span className="block text-xs leading-relaxed text-muted">
+            <span className="block text-sm leading-relaxed text-muted">
               M.S. Computer Science
               <span className="text-accent"> · incoming</span>
             </span>
@@ -57,7 +57,7 @@ export function Introduction() {
 
       <div className="flex flex-col items-start gap-4">
         <Link
-          className="group inline-flex min-h-11 items-center gap-3 border border-border px-4 font-mono text-sm text-foreground no-underline transition-[border-color,color,transform] duration-150 hover:-translate-y-px hover:border-accent hover:text-accent motion-reduce:transform-none motion-reduce:transition-none"
+          className="group inline-flex min-h-11 items-center gap-3 border border-border px-4 font-mono text-base text-foreground no-underline transition-[border-color,color,transform] duration-150 hover:-translate-y-px hover:border-accent hover:text-accent motion-reduce:transform-none motion-reduce:transition-none"
           href="/projects"
         >
           View my projects

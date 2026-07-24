@@ -25,7 +25,7 @@ export function ProjectCard({
       href={href}
       aria-label={`View ${title} project`}
     >
-      <article className="relative flex h-full flex-col rounded-md border border-border before:pointer-events-none before:absolute before:inset-0 before:rounded-md before:border before:border-transparent before:transition-[transform,border-color] before:duration-300 group-hover:z-10 group-hover:border-transparent group-hover:before:scale-[1.015] group-hover:before:border-accent motion-reduce:before:transform-none motion-reduce:before:transition-colors">
+      <article className="relative flex h-full flex-col rounded-md before:pointer-events-none before:absolute before:inset-0 before:rounded-md before:border before:border-transparent before:transition-[transform,border-color] before:duration-300 group-hover:z-10 group-hover:before:scale-[1.015] group-hover:before:border-accent motion-reduce:before:transform-none motion-reduce:before:transition-colors">
         <div className="relative aspect-[4/3]">
           <div className="absolute inset-8 overflow-hidden rounded-sm bg-background transition-[inset] duration-300 group-hover:inset-5 motion-reduce:inset-8 motion-reduce:transition-none">
             {image ? (
@@ -48,12 +48,12 @@ export function ProjectCard({
           <h3 className="m-0 text-[clamp(1.35rem,2.5vw,1.75rem)] leading-tight font-medium tracking-[-0.025em]">
             {title}
           </h3>
-          <p className="mt-3 mb-8 max-w-prose text-sm leading-relaxed text-muted">
+          <p className="mt-3 mb-8 max-w-prose text-base leading-relaxed text-muted">
             {summary}
           </p>
 
           <ul
-            className="mt-auto flex list-none flex-wrap gap-x-3 gap-y-2 pt-4 font-mono text-xs text-muted"
+            className="mt-auto flex list-none flex-wrap gap-x-3 gap-y-2 pt-4 font-mono text-muted"
             aria-label={`${title} tags`}
           >
             {tags.map((tag) => (

@@ -29,7 +29,7 @@ export function ProjectTag({ label }: ProjectTagProps) {
 
   return (
     <span
-      className={`inline-flex rounded-md bg-surface px-2.5 py-1 font-medium ${toneStyles[tone]}`}
+      className={`inline-flex rounded-md bg-surface px-2.5 py-1 text-sm font-medium ${toneStyles[tone]}`}
     >
       {label}
     </span>

@@ -98,11 +98,13 @@ export function MobileMenu({ items }: { items: readonly NavigationItem[] }) {
               {items.map((item) => (
                 <li key={item.href}>
                   <Link
-                    className="flex min-h-12 items-center border-b border-border py-3 font-mono text-sm text-muted no-underline transition-colors duration-150 hover:text-foreground motion-reduce:transition-none"
+                    className="group flex min-h-12 items-center border-b border-border py-3 font-mono text-base text-muted no-underline transition-[color,transform] duration-150 hover:-translate-y-px hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none"
                     href={item.href}
                     onClick={() => setIsOpen(false)}
                   >
-                    {item.label}
+                    <span className="underline decoration-transparent underline-offset-4 transition-colors duration-150 group-hover:decoration-current motion-reduce:transition-none">
+                      {item.label}
+                    </span>
                   </Link>
                 </li>
               ))}

@@ -3,52 +3,52 @@
 :root,
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --background: #111210;
-  --surface: #181916;
-  --foreground: #e8e9e3;
-  --muted: #999c92;
-  --border: #30322c;
-  --accent: #c5d39b;
-  --focus: #dce8b7;
-  --tag-coral: #e6a08e;
-  --tag-gold: #e1b86a;
-  --tag-cyan: #7fc7cc;
-  --tag-blue: #8fb7dd;
-  --tag-violet: #b5a5df;
-  --tag-rose: #d9a0bb;
-  --tag-orange: #dda06f;
-  --tag-teal: #79c5b4;
-  --tag-magenta: #c7a0d8;
-  --tag-red: #e58b8b;
-  --tag-yellow: #d7c76f;
-  --tag-umber: #c69a79;
-  --tag-indigo: #9ea9df;
-  --tag-mint: #8dc9a4;
+  --background: #14191f;
+  --surface: #222830;
+  --foreground: #e5ebf5;
+  --muted: #989ea9;
+  --border: #3b434d;
+  --accent: #9cc875;
+  --focus: #acd985;
+  --tag-coral: #94c06d;
+  --tag-gold: #77c668;
+  --tag-cyan: #fa9998;
+  --tag-blue: #ff8e77;
+  --tag-violet: #e3a859;
+  --tag-rose: #fb9c58;
+  --tag-orange: #c9a7da;
+  --tag-teal: #d29dff;
+  --tag-magenta: #b6b957;
+  --tag-red: #fe9a65;
+  --tag-yellow: #6bbde2;
+  --tag-umber: #74b9fa;
+  --tag-indigo: #9fcb78;
+  --tag-mint: #82d172;
 }
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --background: #f3f3ee;
-  --surface: #e8e8e1;
-  --foreground: #20211e;
-  --muted: #686b63;
-  --border: #cfd0c7;
-  --accent: #53652e;
-  --focus: #435522;
-  --tag-coral: #963f30;
-  --tag-gold: #7d5c12;
-  --tag-cyan: #146b72;
-  --tag-blue: #315f8c;
-  --tag-violet: #604b9c;
-  --tag-rose: #8d3e66;
-  --tag-orange: #94501d;
-  --tag-teal: #176b5b;
-  --tag-magenta: #75448c;
-  --tag-red: #993838;
-  --tag-yellow: #6e6413;
-  --tag-umber: #7c4d2e;
-  --tag-indigo: #465594;
-  --tag-mint: #286943;
+  --background: #f5f1e9;
+  --surface: #e9e4da;
+  --foreground: #24272b;
+  --muted: #646568;
+  --border: #cdc7bc;
+  --accent: #874735;
+  --focus: #673326;
+  --tag-coral: #8b4437;
+  --tag-gold: #755612;
+  --tag-cyan: #26646c;
+  --tag-blue: #3b5f7d;
+  --tag-violet: #655081;
+  --tag-rose: #82465f;
+  --tag-orange: #8a4f28;
+  --tag-teal: #28675d;
+  --tag-magenta: #754b72;
+  --tag-red: #8d3e3e;
+  --tag-yellow: #6b5f17;
+  --tag-umber: #76503a;
+  --tag-indigo: #4d567e;
+  --tag-mint: #35644b;
 }
 
 @theme inline {
@@ -59,8 +59,8 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-focus: var(--focus);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-ibm-plex-sans);
+  --font-mono: var(--font-ibm-plex-mono);
 }
 
 html {
@@ -71,7 +71,7 @@ body {
   min-height: 100%;
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), sans-serif;
+  font-family: var(--font-ibm-plex-sans), sans-serif;
   transition: background-color 160ms ease, color 160ms ease;
 }
 

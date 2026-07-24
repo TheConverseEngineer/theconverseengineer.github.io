@@ -18,7 +18,7 @@ export function PathDisplay() {
 
   return (
     <nav
-      className="block overflow-hidden text-ellipsis whitespace-nowrap font-mono text-sm text-foreground"
+      className="block overflow-hidden text-ellipsis whitespace-nowrap font-mono text-base text-foreground"
       aria-label="Breadcrumb"
     >
       <Link

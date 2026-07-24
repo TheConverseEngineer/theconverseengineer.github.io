@@ -25,8 +25,8 @@ const projectCards: readonly ProjectCardData[] = (
 
 export default function ProjectsPage() {
   return (
-    <main className="mx-auto w-full max-w-304 px-5 py-[clamp(4rem,10vw,8rem)] max-[35rem]:px-4 min-[61rem]:px-10">
-      <h1 className="mt-0 mb-8 text-2xl font-medium tracking-[-0.025em] text-accent">
+    <main className="mx-auto w-full max-w-304 px-5 pt-[clamp(4rem,10vw,8rem)] pb-[clamp(4rem,10vw,8rem)] max-[35rem]:px-4 min-[61rem]:px-10 min-[61rem]:pt-[clamp(3rem,8svh,7rem)]">
+      <h1 className="mt-0 mb-8 text-[clamp(2.5rem,6vw,4.75rem)] leading-[0.97] font-[520] tracking-[-0.05em] text-accent">
         Projects
       </h1>
       <ProjectFilter projects={projectCards} />

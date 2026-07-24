@@ -116,7 +116,7 @@ export function FilterDropdown({
     >
       <span
         id={labelId}
-        className="font-mono text-xs font-medium tracking-[0.08em] text-muted uppercase"
+        className="font-mono text-base font-medium tracking-[0.08em] text-muted uppercase"
       >
         {label}
       </span>
@@ -124,7 +124,7 @@ export function FilterDropdown({
       <div className="relative">
         <button
           ref={triggerRef}
-          className="group/trigger inline-flex min-h-11 w-44 items-center justify-start gap-1.5 px-1 font-mono text-sm text-muted transition-colors duration-150 hover:text-foreground motion-reduce:transition-none"
+          className="group/trigger inline-flex min-h-11 w-48 items-center justify-start gap-1.5 px-1 font-mono text-base text-muted transition-colors duration-150 hover:text-foreground motion-reduce:transition-none min-[48rem]:w-72"
           type="button"
           aria-labelledby={`${labelId} ${valueId}`}
           aria-haspopup="menu"
@@ -145,7 +145,10 @@ export function FilterDropdown({
             }
           }}
         >
-          <span id={valueId} className="truncate">
+          <span
+            id={valueId}
+            className="min-w-0 flex-1 whitespace-normal text-left leading-snug min-[48rem]:whitespace-nowrap"
+          >
             {value || allLabel}
           </span>
           <svg
@@ -166,7 +169,7 @@ export function FilterDropdown({
 
         {isOpen && (
           <div
-            className="absolute top-full left-0 z-20 w-44 pt-1"
+            className="absolute top-full left-0 z-20 w-48 pt-1 min-[48rem]:w-72"
             role="menu"
             aria-label={`${label} filters`}
             onKeyDown={handleMenuKeyDown}
@@ -178,7 +181,7 @@ export function FilterDropdown({
                 return (
                   <button
                     key={option || "all"}
-                    className={`flex min-h-10 w-full items-center rounded-sm px-2.5 text-left font-mono text-sm transition-colors duration-150 hover:bg-background hover:text-foreground motion-reduce:transition-none ${
+                    className={`flex min-h-10 w-full items-center rounded-sm px-2.5 py-2 text-left font-mono text-base leading-snug whitespace-normal transition-colors duration-150 hover:bg-background hover:text-foreground motion-reduce:transition-none ${
                       isSelected ? "text-accent" : "text-muted"
                     }`}
                     type="button"

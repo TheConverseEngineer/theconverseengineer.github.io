@@ -1,5 +1,8 @@
 import { ExperienceItem } from "./experience-item";
 
+const descriptionLinkStyles =
+  "group inline-flex text-muted no-underline transition-[color,transform] duration-150 hover:-translate-y-px hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none";
+
 const experience = [
   {
     company: "Comma",
@@ -25,8 +28,17 @@ const experience = [
     dates: "Summer 2025",
     role: "Software Engineering Intern ",
     context: "Self-driving vehicles",
-    description:
-      "Build document retrieval and chatbot backend for client site <a href=\"https://millmind.ai\">millmind.ai</a>.",
+    description: (
+      <>
+        Build document retrieval and chatbot backend for client site{" "}
+        <a className={descriptionLinkStyles} href="https://millmind.ai">
+          <span className="underline decoration-transparent underline-offset-4 transition-colors duration-150 group-hover:decoration-current motion-reduce:transition-none">
+            millmind.ai
+          </span>
+        </a>
+        .
+      </>
+    ),
   },
   {
     company: "TAIT Global",

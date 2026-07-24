@@ -101,7 +101,7 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
 
           {(language || category) && (
             <button
-              className="min-h-11 rounded-md border border-border px-3 font-mono text-xs font-medium text-muted transition-[border-color,color,transform] duration-150 hover:-translate-y-px hover:border-accent hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none"
+              className="min-h-11 rounded-md border border-border px-3 font-mono text-base font-medium text-muted transition-[border-color,color,transform] duration-150 hover:-translate-y-px hover:border-accent hover:text-foreground motion-reduce:transform-none motion-reduce:transition-none"
               type="button"
               onClick={() => {
                 setLanguage("");
@@ -113,7 +113,7 @@ export function ProjectFilter({ projects }: ProjectFilterProps) {
           )}
         </form>
 
-        <p className="m-0 font-mono text-xs text-muted" aria-live="polite">
+        <p className="m-0 font-mono text-base text-muted" aria-live="polite">
           {filteredProjects.length}{" "}
           {filteredProjects.length === 1 ? "project" : "projects"}
         </p>

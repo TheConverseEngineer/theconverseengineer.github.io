@@ -19,7 +19,11 @@ export function ThemeToggle() {
     document.documentElement.dataset.theme = nextTheme;
 
     try {
-      window.localStorage.setItem("theme", nextTheme);
+      if (nextTheme === "light") {
+        window.localStorage.setItem("theme", "light");
+      } else {
+        window.localStorage.removeItem("theme");
+      }
     } catch {}
   }
 

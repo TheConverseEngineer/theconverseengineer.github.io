@@ -55,7 +55,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </h1>
             </div>
 
-            <div className="order-1 min-[40rem]:order-2">
+            <div className="order-1 text-base min-[40rem]:order-2">
               <Suspense
                 fallback={
                   <ProjectBackLinkContent
@@ -70,7 +70,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
 
           <ul
-            className="mt-7 mb-0 flex list-none flex-wrap gap-2 p-0 font-mono text-xs"
+            className="mt-7 mb-0 flex list-none flex-wrap gap-2 p-0 font-mono"
             aria-label={`${project.title} tags`}
           >
             {project.tags.map((tag) => (
@@ -99,7 +99,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
 
           <a
-            className="group mt-5 inline-flex min-h-11 items-center gap-3 rounded-md border border-border px-4 font-mono text-sm text-foreground no-underline transition-[border-color,color,transform] duration-150 hover:-translate-y-px hover:border-accent hover:text-accent motion-reduce:transform-none motion-reduce:transition-none"
+            className="group mt-5 inline-flex min-h-11 items-center gap-3 rounded-md border border-border px-4 font-mono text-base text-foreground no-underline transition-[border-color,color,transform] duration-150 hover:-translate-y-px hover:border-accent hover:text-accent motion-reduce:transform-none motion-reduce:transition-none"
             href={project.githubUrl}
             target="_blank"
             rel="noreferrer"

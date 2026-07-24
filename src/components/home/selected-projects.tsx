@@ -5,7 +5,7 @@ import { projects } from "@/data/projects";
 
 export function SelectedProjects() {
   return (
-    <section className="mt-24 min-[61rem]:mt-32" aria-labelledby="projects-heading">
+    <section className="mt-24 min-[61rem]:mt-0" aria-labelledby="projects-heading">
       <div className="mb-8 flex items-baseline justify-between gap-6">
         <h2
           id="projects-heading"
@@ -24,8 +24,13 @@ export function SelectedProjects() {
       </div>
 
       <div className="grid gap-x-6 gap-y-14 min-[48rem]:grid-cols-2 min-[76rem]:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} source="home" />
+        {projects.slice(0, 3).map((project, index) => (
+          <div
+            key={project.title}
+            className={index === 2 ? "hidden min-[76rem]:block" : undefined}
+          >
+            <ProjectCard {...project} source="home" />
+          </div>
         ))}
       </div>
     </section>
